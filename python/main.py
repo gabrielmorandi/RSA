@@ -114,8 +114,8 @@ def main():
     key_sizes = [2048, 4096]
     libraries = ["cryptography", "pycryptodome"]
     message = b'a' * 190
-    iterations_list = [1]
-    repetitions = 2
+    iterations_list = [10, 100, 1000]
+    repetitions = 5
 
     for lib in libraries:
         for key_size in key_sizes:
